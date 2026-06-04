@@ -1,17 +1,14 @@
 ---
-title: "Lorem Ipsum"
-subtitle: "Sed sit amet arcu a diam tincidunt porta"
-thumbnail: "/images/800x600.png"
+title: "RA8875 DRM Driver"
+subtitle: "Migrating RAiO's RA8875 display controller from fbdev to DRM in Linux"
+thumbnail: "/images/drm_physical.png"
 ---
 
-![dummy image](/images/800x600.png)
+One of the ongoing effort in the DRM subsystem of the Linux kernel is
+to migrate all drivers from the old fbtft system to the more modern DRM framework.
 
-![dummy image](/images/800x600.png)
+![tested DRM RA8875 driver](/images/drm_physical.png)
+_**Working DRM driver tested with Raspberry Pi 3B**_
 
-_**Lorem Ipsum (2019)**_
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Sed sit amet arcu a diam tincidunt porta.
-
-Fusce ut elit euismod massa convallis volutpat vitae et magna.
+Currently in the review phase, with the [first RFC](https://lore.kernel.org/dri-devel/20260504021355.72128-1-azuddinadam@gmail.com/) sent on April 2026, and working on
+the v1 patch sometime in May.
